@@ -54,4 +54,4 @@ if __name__ == "__main__":
         css=CSS,
         js=JS,
         theme=gr.themes.Base()
-    ).launch()
+    ).launch(server_name="0.0.0.0", server_port=int(os.getenv("PORT", 7860)))
